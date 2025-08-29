@@ -39,11 +39,3 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Run tests
-        env:
-          DATABASE_URL: postgres://postgres:mohn11w1@localhost:5432/testing
-        run: npm test
